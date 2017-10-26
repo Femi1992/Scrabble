@@ -1,4 +1,5 @@
 import operator
+import random
 __author__ = 'codesse'
 
 
@@ -55,14 +56,6 @@ class HighScoringWords:
 
 
     def build_leaderboard_for_letters(self, starting_letters):
-        """
-        Build a leaderboard of the top scoring MAX_LEADERBOARD_LENGTH words that can be built using only the letters contained in the starting_letters String.
-        The number of occurrences of a letter in the startingLetters String IS significant. If the starting letters are bulx, the word "bull" is NOT valid.
-        There is only one l in the starting string but bull contains two l characters.
-        Words are ordered in the leaderboard by their score (with the highest score first) and then alphabetically for words which have the same score.
-        :param starting_letters: a random string of letters from which to build words that are valid against the contents of the wordlist.txt file
-        :return:
-        """
 
         new_word = ""
         key_len = 10
