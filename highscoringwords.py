@@ -31,12 +31,14 @@ class HighScoringWords:
 
         counter = 0;
         wordValues = {}
+        print ""
 
         for word in wordsThreeCharactersOrMore:
             for letter in word:
                 counter += self.letter_values[letter]
             wordValues[word] = counter;
             counter = 0;
+            print ""
 
         sorted_words = dict(sorted(wordValues.items(), key=operator.itemgetter(1))[-100:])
         sortedValues = sorted((set([value for key, value in sorted_words.iteritems()])), reverse=True)
